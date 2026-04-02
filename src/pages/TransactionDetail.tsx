@@ -23,7 +23,7 @@ export function TransactionDetail() {
           type="button"
           onClick={goToList}
           className="flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[#007AFF] active:bg-black/5 active:opacity-80 dark:active:bg-white/10"
-          aria-label="Назад до списку транзакцій"
+          aria-label="Back to transaction list"
         >
           <FontAwesomeIcon icon={faChevronLeft} className="h-6 w-6" />
         </button>
@@ -44,7 +44,7 @@ export function TransactionDetail() {
           type="button"
           onClick={goToList}
           className="-ms-2 flex min-h-11 min-w-11 items-center justify-center rounded-lg text-[#007AFF] active:bg-black/5 active:opacity-80 dark:active:bg-white/10"
-          aria-label="Назад до списку транзакцій"
+          aria-label="Back to transaction list"
         >
           <FontAwesomeIcon icon={faChevronLeft} className="h-6 w-6" />
         </button>
