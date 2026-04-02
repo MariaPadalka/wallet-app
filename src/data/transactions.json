@@ -1,0 +1,224 @@
+[
+  {
+    "id": "txn-01",
+    "type": "Credit",
+    "amount": 89.99,
+    "name": "IKEA",
+    "description": "Living room shelving unit",
+    "date": "2026-04-01T14:30:00.000Z",
+    "pending": true,
+    "authorizedUserName": "Alex Morgan",
+    "icon": {
+      "backgroundColor": "#1e3a5f",
+      "iconKey": "couch"
+    }
+  },
+  {
+    "id": "txn-02",
+    "type": "Payment",
+    "amount": 200,
+    "name": "Bank transfer",
+    "description": "Manual payment from checking",
+    "date": "2026-03-31T09:00:00.000Z",
+    "authorizedUserName": "Jordan Lee",
+    "icon": {
+      "backgroundColor": "#2d1f3d",
+      "iconKey": "buildingColumns"
+    }
+  },
+  {
+    "id": "txn-03",
+    "type": "Credit",
+    "amount": 42.5,
+    "name": "Target",
+    "description": "Groceries and household",
+    "date": "2026-03-30T18:22:00.000Z",
+    "icon": {
+      "backgroundColor": "#1a2f1a",
+      "iconKey": "cartShopping"
+    }
+  },
+  {
+    "id": "txn-04",
+    "type": "Credit",
+    "amount": 16.8,
+    "name": "Blue Bottle Coffee",
+    "description": "Coffee and pastry",
+    "date": "2026-03-29T08:15:00.000Z",
+    "pending": true,
+    "icon": {
+      "backgroundColor": "#3d2a1a",
+      "iconKey": "mugHot"
+    }
+  },
+  {
+    "id": "txn-05",
+    "type": "Credit",
+    "amount": 128,
+    "name": "Delta Air Lines",
+    "description": "Flight segment — SFO to SEA",
+    "date": "2026-03-15T11:40:00.000Z",
+    "icon": {
+      "backgroundColor": "#152838",
+      "iconKey": "plane"
+    }
+  },
+  {
+    "id": "txn-06",
+    "type": "Credit",
+    "amount": 54.2,
+    "name": "Sweetgreen",
+    "description": "Salad bowl — pickup",
+    "date": "2026-03-10T19:05:00.000Z",
+    "icon": {
+      "backgroundColor": "#1f2d1f",
+      "iconKey": "leaf"
+    }
+  },
+  {
+    "id": "txn-07",
+    "type": "Payment",
+    "amount": 75,
+    "name": "Autopay",
+    "description": "Scheduled minimum payment",
+    "date": "2026-03-05T06:00:00.000Z",
+    "icon": {
+      "backgroundColor": "#251828",
+      "iconKey": "arrowsRotate"
+    }
+  },
+  {
+    "id": "txn-08",
+    "type": "Credit",
+    "amount": 39.99,
+    "name": "Nike",
+    "description": "Running shoes — online order",
+    "date": "2026-02-28T13:12:00.000Z",
+    "icon": {
+      "backgroundColor": "#2a1a1a",
+      "iconKey": "shirt"
+    }
+  },
+  {
+    "id": "txn-09",
+    "type": "Credit",
+    "amount": 12.5,
+    "name": "Spotify",
+    "description": "Premium subscription",
+    "date": "2026-02-01T00:00:00.000Z",
+    "icon": {
+      "backgroundColor": "#0d2818",
+      "iconKey": "music"
+    }
+  },
+  {
+    "id": "txn-10",
+    "type": "Credit",
+    "amount": 220,
+    "name": "Apple Store",
+    "description": "Accessory purchase",
+    "date": "2026-01-10T15:45:00.000Z",
+    "icon": {
+      "backgroundColor": "#1c1c1e",
+      "iconKey": "laptop"
+    }
+  },
+  {
+    "id": "txn-11",
+    "type": "Credit",
+    "amount": 67.4,
+    "name": "Whole Foods",
+    "description": "Weekly groceries",
+    "date": "2025-12-22T17:20:00.000Z",
+    "icon": {
+      "backgroundColor": "#14532d",
+      "iconKey": "leaf"
+    }
+  },
+  {
+    "id": "txn-12",
+    "type": "Payment",
+    "amount": 150,
+    "name": "Payment",
+    "description": "From Chase checking · ref 88421",
+    "date": "2025-12-18T12:00:00.000Z",
+    "icon": {
+      "backgroundColor": "#1e3a8a",
+      "iconKey": "buildingColumns"
+    }
+  },
+  {
+    "id": "txn-13",
+    "type": "Credit",
+    "amount": 24.99,
+    "name": "Uber Eats",
+    "description": "Dinner delivery",
+    "date": "2025-12-05T19:30:00.000Z",
+    "pending": true,
+    "icon": {
+      "backgroundColor": "#422006",
+      "iconKey": "mugHot"
+    }
+  },
+  {
+    "id": "txn-14",
+    "type": "Credit",
+    "amount": 199,
+    "name": "Best Buy",
+    "description": "Electronics — store pickup",
+    "date": "2025-11-28T14:00:00.000Z",
+    "authorizedUserName": "Sam Rivera",
+    "icon": {
+      "backgroundColor": "#1d4ed8",
+      "iconKey": "laptop"
+    }
+  },
+  {
+    "id": "txn-15",
+    "type": "Credit",
+    "amount": 8.75,
+    "name": "Starbucks",
+    "description": "Mobile order",
+    "date": "2025-11-15T07:45:00.000Z",
+    "icon": {
+      "backgroundColor": "#422006",
+      "iconKey": "mugHot"
+    }
+  },
+  {
+    "id": "txn-16",
+    "type": "Credit",
+    "amount": 310,
+    "name": "United Airlines",
+    "description": "Round trip — domestic",
+    "date": "2025-10-20T10:15:00.000Z",
+    "icon": {
+      "backgroundColor": "#0c4a6e",
+      "iconKey": "plane"
+    }
+  },
+  {
+    "id": "txn-17",
+    "type": "Credit",
+    "amount": 45,
+    "name": "Shell",
+    "description": "Fuel — station #4421",
+    "date": "2025-10-01T08:10:00.000Z",
+    "icon": {
+      "backgroundColor": "#3f3f46",
+      "iconKey": "arrowsRotate"
+    }
+  },
+  {
+    "id": "txn-18",
+    "type": "Credit",
+    "amount": 29,
+    "name": "H&M",
+    "description": "Clothing",
+    "date": "2025-09-12T16:40:00.000Z",
+    "icon": {
+      "backgroundColor": "#831843",
+      "iconKey": "shirt"
+    }
+  }
+]
