@@ -18,7 +18,7 @@ export function TransactionDetail() {
 
   if (!tx) {
     return (
-      <div className="min-h-svh bg-[#F2F2F7] px-4 pt-6 dark:bg-zinc-950">
+      <div className="mx-auto min-h-svh max-w-md bg-[#F2F2F7] px-4 pt-6 pb-10 dark:bg-zinc-950">
         <button
           type="button"
           onClick={goToList}
@@ -38,8 +38,8 @@ export function TransactionDetail() {
   const paymentLabel = tx.paymentMethod ?? 'Wallet debit card'
 
   return (
-    <div className="min-h-svh bg-[#F2F2F7] dark:bg-zinc-950">
-      <header className="px-4 pt-3 pb-2">
+    <div className="mx-auto min-h-svh max-w-md bg-[#F2F2F7] px-4 pb-12 pt-3 dark:bg-zinc-950">
+      <header className="pb-2">
         <button
           type="button"
           onClick={goToList}
@@ -50,7 +50,7 @@ export function TransactionDetail() {
         </button>
       </header>
 
-      <main className="mx-auto max-w-md px-4 pb-12">
+      <main className="pb-2">
         <div className="pt-2 text-center">
           <p className="text-4xl font-bold tracking-tight text-black dark:text-zinc-50">
             {formatUsd(tx.amount)}

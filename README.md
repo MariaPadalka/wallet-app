@@ -2,6 +2,10 @@
 
 Mobile-first wallet UI built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Data is loaded from local JSON files; icons use **Font Awesome**.
 
+### Live demo (Vercel)
+
+- **App:** [https://wallet-app-pi-beryl.vercel.app/](https://wallet-app-pi-beryl.vercel.app/)
+
 ---
 
 ## Run locally
@@ -50,14 +54,6 @@ Other scripts:
 
 ## Screenshots
 
-Add your images to [`docs/screenshots/`](docs/screenshots/) (folder is in the repo), then either replace the paths below or paste markdown / HTML here.
-
-**Transactions list**
-
-![Transactions list](docs/screenshots/transactions-list.png)
-
-**Transaction detail**
-
-![Transaction detail](docs/screenshots/transaction-detail.png)
-
-<!-- Optional: paste more images or notes below this line -->
+| Transactions list | Transaction detail |
+| :---: | :---: |
+| ![Transactions list](docs/screenshots/transactions-list.png) | ![Transaction detail](docs/screenshots/transaction-detail.png) |
