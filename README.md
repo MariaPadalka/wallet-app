@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Wallet App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mobile-first wallet UI built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Data is loaded from local JSON files; icons use **Font Awesome**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
+**Requirements:** [Node.js](https://nodejs.org/) 20+ (or current LTS) and npm.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Clone the repository
+git clone <YOUR_REPO_URL>
+cd wallet-app
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Start dev server (http://localhost:5173)
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Other scripts:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Command | Description |
+|--------|-------------|
+| `npm run build` | Typecheck + production build to `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Pages
+
+### Transactions list (`/`)
+
+- **Card balance** — current balance and available amount (limit minus balance from JSON).
+- **Daily points** — points for “today” using the seasonal rules in code.
+- **No payment due** — message from `wallet.json`.
+- **Latest transactions** — scrollable list (10 items first, **Show more** to expand). Each row opens the detail screen.
+- Tap a row to open **Transaction detail**.
+
+### Transaction detail (`/transaction/:transactionId`)
+
+- Back button returns to the list (`/`).
+- Hero: amount, merchant name, date and time.
+- Card: status (Approved / Pending), payment method, description, authorized user (if any), transaction type, **Total**.
+
+---
+
+## Screenshots
+
+Add your images to [`docs/screenshots/`](docs/screenshots/) (folder is in the repo), then either replace the paths below or paste markdown / HTML here.
+
+**Transactions list**
+
+![Transactions list](docs/screenshots/transactions-list.png)
+
+**Transaction detail**
+
+![Transaction detail](docs/screenshots/transaction-detail.png)
+
+<!-- Optional: paste more images or notes below this line -->
