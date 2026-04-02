@@ -1,6 +1,7 @@
 export {
   getCardBalanceSummary,
   getDailyPointsSummary,
+  getTransactionById,
   loadWalletBootstrap,
   loadWalletConfig,
   loadTransactions,

@@ -45,6 +45,10 @@ export function loadTransactions(): Transaction[] {
   )
 }
 
+export function getTransactionById(id: string): Transaction | undefined {
+  return loadTransactions().find((t) => t.id === id)
+}
+
 export function getCardBalanceSummary(config: WalletConfig): CardBalanceSummary {
   const availableUsd = roundMoney(config.maxCardLimitUsd - config.cardBalanceUsd)
   return {

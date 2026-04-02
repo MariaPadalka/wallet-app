@@ -1,6 +1,7 @@
 import { faCheck, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { getTransactionIcon } from '@/data/iconMap'
 import { loadWalletBootstrap } from '@/data/loadWalletData'
 import type { Transaction } from '@/types/wallet'
@@ -10,6 +11,7 @@ import { formatTransactionDateLabel } from '@/utils/transactionDateDisplay'
 const LATEST_TRANSACTIONS_LIMIT = 10
 
 function TransactionRow({ tx }: { tx: Transaction }) {
+  const navigate = useNavigate()
   const icon = getTransactionIcon(tx.icon.iconKey)
   const dateLabel = formatTransactionDateLabel(tx.date)
   const subtitlePrimary = tx.pending
@@ -23,6 +25,7 @@ function TransactionRow({ tx }: { tx: Transaction }) {
     <li className="border-b border-gray-100 last:border-b-0 dark:border-zinc-800">
       <button
         type="button"
+        onClick={() => navigate(`/transaction/${tx.id}`)}
         className="flex w-full items-center gap-3 px-4 py-3.5 text-left transition-colors hover:bg-gray-50/80 active:bg-gray-100/80 dark:hover:bg-zinc-800/50 dark:active:bg-zinc-800"
       >
         <div

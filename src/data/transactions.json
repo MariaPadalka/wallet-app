@@ -8,6 +8,7 @@
     "date": "2026-04-01T14:30:00.000Z",
     "pending": true,
     "authorizedUserName": "Alex Morgan",
+    "paymentMethod": "Wallet Credit Card ·•••9012",
     "icon": {
       "backgroundColor": "#1e3a5f",
       "iconKey": "couch"
@@ -21,6 +22,7 @@
     "description": "Manual payment from checking",
     "date": "2026-03-31T09:00:00.000Z",
     "authorizedUserName": "Jordan Lee",
+    "paymentMethod": "ACH transfer · Checking ·•••4821",
     "icon": {
       "backgroundColor": "#2d1f3d",
       "iconKey": "buildingColumns"
@@ -58,6 +60,7 @@
     "name": "Delta Air Lines",
     "description": "Flight segment — SFO to SEA",
     "date": "2026-03-15T11:40:00.000Z",
+    "paymentMethod": "Wallet Credit Card ·•••9012",
     "icon": {
       "backgroundColor": "#152838",
       "iconKey": "plane"

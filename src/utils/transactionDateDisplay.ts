@@ -1,3 +1,5 @@
+import { formatTransactionSlashDate } from '@/utils/transactionDetailDate'
+
 const MS_PER_DAY = 86_400_000
 
 function startOfLocalDay(d: Date): Date {
@@ -5,8 +7,8 @@ function startOfLocalDay(d: Date): Date {
 }
 
 /**
- * Last 7 calendar days (including today): weekday name (e.g. "Thursday").
- * Older: full date in `en-US` (e.g. "Mar 15, 2026").
+ * First week (last 7 calendar days including today): weekday name (e.g. "Thursday").
+ * Older entries: short US date with slashes (e.g. `4/1/26`).
  */
 export function formatTransactionDateLabel(
   isoDate: string,
@@ -21,9 +23,5 @@ export function formatTransactionDateLabel(
     return new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(tx)
   }
 
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  }).format(tx)
+  return formatTransactionSlashDate(isoDate)
 }

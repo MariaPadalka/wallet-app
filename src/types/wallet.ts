@@ -19,6 +19,8 @@ export interface Transaction {
   pending?: boolean
   /** Shown before the date when another person performed the transaction. */
   authorizedUserName?: string
+  /** Card or account label on the detail screen (e.g. "RBC Bank Debit Card"). */
+  paymentMethod?: string
   icon: TransactionIcon
 }
 
